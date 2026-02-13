@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ancient Earth Reborn – Site Oficial</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet"><style>
+:root{
+  --accent:#6bff3c;
+  --accent2:#2b7cff;
+  --dark:#050608;
+  --glass:rgba(0,0,0,.65);
+  --text:#eaeaea;
+  --muted:#9aa0a6;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:Inter,Arial,sans-serif;
+  min-height:100vh;
+  background:url('https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABSw9vlIRy15ZaNiqvtD2SrcF7S9gCCpWvMNMg2s7SQsFYNOc-Fdbaod-LoLjun1WkS7KQpzCxP01IdzJ1Rkm2kQzr8qD5M--6phG.jpg?r=75d') center/cover fixed no-repeat;
+  color:var(--text);
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:radial-gradient(circle at top,rgba(0,0,0,.35),#000 75%);
+  z-index:-1;
+}
+
+header{
+  position:fixed;top:0;width:100%;z-index:1000;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:20px 60px;
+  background:rgba(0,0,0,.6);
+  backdrop-filter:blur(14px);
+}
+header .logo{
+  font-family:Orbitron,sans-serif;
+  font-size:1.6rem;
+  letter-spacing:3px;
+  font-weight:800;
+  color:var(--accent);
+}
+header nav a{
+  margin-left:28px;text-decoration:none;
+  color:var(--muted);font-weight:500;
+}
+header nav a:hover{color:#fff}
+
+.hero{
+  min-height:100vh;
+  display:flex;align-items:center;
+  padding:0 8%;
+}
+.hero-content{
+  max-width:900px;
+  animation:fadeUp 1.2s ease forwards;
+}
+.hero h1{
+  font-family:Orbitron,sans-serif;
+  font-size:clamp(3rem,6vw,5rem);
+  letter-spacing:4px;
+}
+.hero p{
+  margin:25px 0 40px;
+  max-width:650px;
+  font-size:1.1rem;color:var(--muted);
+}
+.hero .btn{
+  display:inline-block;
+  padding:18px 48px;border-radius:50px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#000;font-weight:800;text-decoration:none;
+  box-shadow:0 0 45px rgba(107,255,60,.35);
+  transition:.4s;
+}
+.hero .btn:hover{transform:scale(1.08)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+
+section{
+  padding:110px 8%;
+  background:var(--glass);
+  backdrop-filter:blur(10px);
+}
+section h2{
+  font-family:Orbitron,sans-serif;
+  font-size:2.4rem;text-align:center;
+  margin-bottom:50px;color:var(--accent);
+}
+
+.species{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+.species-card{
+  background:rgba(0,0,0,.75);
+  border-radius:18px;overflow:hidden;
+  transition:.4s;
+}
+.species-card:hover{transform:translateY(-12px)}
+.species-card div{padding:22px}
+.species-card h3{color:var(--accent)}
+.species-card p{color:var(--muted);font-size:.95rem}
+
+.login{
+  max-width:420px;margin:auto;
+  background:rgba(0,0,0,.75);
+  padding:35px;border-radius:18px;
+}
+.login input,.login button{
+  width:100%;padding:14px;margin-top:12px;
+  border-radius:10px;border:none;
+}
+.login input{background:#050608;color:#fff}
+.login button{cursor:pointer;font-weight:700}
+
+#chatBox{height:220px;overflow-y:auto;font-size:.9rem;margin-bottom:10px}
+
+footer{background:#050608;text-align:center;padding:40px;color:var(--muted)}
+</style></head>
+<body><header>
+  <div class="logo">ANCIENT EARTH REBORN</div>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#atualizacoes">Atualizações</a>
+    <a href="#suporte">Suporte</a>
+  </nav>
+</header><section class="hero" id="inicio">
+  <div class="hero-content">
+    <h1>Ancient Earth Reborn</h1>
+    <p>Sobrevivência pré-histórica extrema ambientada no Triássico brasileiro.</p>
+    <a class="btn" href="#atualizacoes">Ver Atualizações</a>
+  </div>
+</section><section id="sobre">
+  <h2>Sobre o Jogo</h2>
+  <div class="species">
+    <div class="species-card"><div>
+      <h3>O que é Ancient Earth Reborn?</h3>
+      <p><strong>Ancient Earth Reborn</strong> é um jogo de sobrevivência realista de mundo aberto, inspirado em The Isle. Ambientado na <strong>Formação Santa Maria (RS, Brasil)</strong>, durante o período <strong>Triássico</strong>, o jogo traz dinossauros e criaturas pré-históricas brasileiras.</p>
+    </div></div><div class="species-card"><div>
+  <h3>Motor Gráfico</h3>
+  <p>O jogo está sendo desenvolvido na <strong>Godot Engine 4</strong>, uma engine gratuita e de código aberto, utilizando recursos avançados de renderização, física e iluminação global (SDFGI).</p>
+</div></div>
+
+<div class="species-card"><div>
+  <h3>Objetivo do Jogador</h3>
+  <p>O jogador assume o papel de um dinossauro ou criatura da época, com o objetivo de sobreviver, crescer, caçar, fugir de predadores e interagir com outros jogadores. O ciclo de vida é o foco central.</p>
+</div></div>
+
+<div class="species-card"><div>
+  <h3>Modos de Jogo</h3>
+  <p>O foco inicial é o <strong>Modo Multiplayer</strong> com servidores dedicados. O modo <strong>Singleplayer</strong> está planejado para o futuro.</p>
+</div></div>
+
+<div class="species-card"><div>
+  <h3>Crescimento</h3>
+  <p>O jogador começa como filhote e, com o tempo e sobrevivência, cresce até a fase adulta, ganhando força, resistência e novos comportamentos.</p>
+</div></div>
+
+<div class="species-card"><div>
+  <h3>Mapa & Biomas</h3>
+  <p>O mapa é baseado na topografia da região de Santa Maria (RS), com florestas, rios, áreas pantanosas e formações rochosas, simulando um ecossistema realista da época.</p>
+</div></div>
+
+<div class="species-card"><div>
+  <h3>Estilo Gráfico</h3>
+  <p>Estilo <strong>semi-realista</strong>, com foco em imersão, ambientação pré-histórica e detalhes naturais, aproveitando o sistema de iluminação global da Godot 4.</p>
+</div></div>
+
+  </div>
+
+  <!-- PERFIL ADICIONADO -->
+  <section id="perfil">
+    <h2>Perfil do Fundador</h2>
+    <div class="species">
+      <div class="species-card">
+        <div style="text-align:center">
+          <img src="https://media.tenor.com/p_lxj_2R5GoAAAAM/walking-with-dinosaurs-tyrannosaurus-rex.gif"
+               style="width:120px;height:120px;border-radius:50%;border:3px solid var(--accent);margin-bottom:15px">
+          <h3>Giga_chad</h3>
+          <p>Fundador Ancient Earth<br>Desenvolvedor da Godot3D</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <h2 style="margin-top:80px">Último Vídeo</h2>
+  <p style="text-align:center;color:var(--muted);margin-bottom:20px">
+    <strong>OBS:</strong> Se o vídeo não funcionar corretamente, abra diretamente no YouTube.
+  </p>
+  <div style="max-width:900px;margin:0 auto;border-radius:18px;overflow:hidden;box-shadow:0 0 40px rgba(0,0,0,.8)">
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/pCDSoGXGSKM" 
+        title="Ancient Earth Reborn – Último Vídeo"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+<section id="download">
+  <h2>Download do Jogo</h2>
+  <div class="species">
+    <div class="species-card"><div>
+      <h3>Ancient Earth Reborn</h3>
+      <p><strong>O download da nova atualização ainda não está disponível.</strong><br>
+      Estamos trabalhando para entregar a melhor experiência possível. Fique atento às atualizações oficiais.</p>
+    </div></div>
+  </div>
+</section>
+<section id="atualizacoes">
+  <h2>Atualizações do Desenvolvimento</h2>
+  <div class="species">
+    <div class="species-card"><div>
+      <h3>Espécies em Desenvolvimento</h3>
+      <p><strong>Alossauro</strong>, <strong>Estegossauro</strong> e <strong>Oxalaia quilombensis</strong> estão sendo feitos atualmente.</p>
+    </div></div>
+    <div class="species-card"><div>
+      <h3>Status Geral</h3>
+      <p>Avanços contínuos no mapa. Não houve melhorias de IA nesta fase.</p>
+    </div></div>
+  </div>
+</section>
+<section id="suporte">
+  <h2>Suporte 24 Horas</h2>
+  <p style="text-align:center;color:var(--muted);margin-bottom:30px">
+    Nosso suporte 24 horas está em desenvolvimento. <br>
+    Por enquanto, o suporte oficial funciona via Discord:
+    <br><br>
+    <a href="https://discord.gg/JSqxPYqM3z" target="_blank" style="color:var(--accent)">https://discord.gg/JSqxPYqM3z</a>
+  </p>
+  <div class="login" id="loginBox">
+    <h3>Criar Conta / Entrar</h3>
+    <input id="email" placeholder="Email" type="email">
+    <input id="password" placeholder="Senha" type="password">
+    <button onclick="login()">Entrar / Criar Conta</button>
+  </div>
+  <div class="login" id="chatContainer" style="display:none">
+    <div id="chatBox"></div>
+    <input id="chatInput" placeholder="Digite sua mensagem">
+  </div>
+</section>
+<footer>
+  <p>© 2026 Ancient Earth Reborn — Site Oficial</p>
+</footer>
+<script>
+function login(){
+  const email=document.getElementById('email').value;
+  const pass=document.getElementById('password').value;
+  if(email && pass){
+    localStorage.setItem('user',email);
+    document.getElementById('loginBox').style.display='none';
+    document.getElementById('chatContainer').style.display='block';
+  }else alert('Preencha email e senha');
+}
+
+const input=document.getElementById('chatInput');
+const chat=document.getElementById('chatBox');
+
+input.addEventListener('keypress',e=>{
+  if(e.key==='Enter' && input.value.trim()!==''){
+    const msg=document.createElement('div');
+    msg.textContent='Você: '+input.value;
+    chat.appendChild(msg);
+
+    const bot=document.createElement('div');
+    bot.style.color='#6bff3c';
+    bot.textContent='Suporte: Nosso suporte 24 horas está em desenvolvimento. No momento, utilize o Discord oficial.';
+    chat.appendChild(bot);
+
+    input.value='';
+    chat.scrollTop=chat.scrollHeight;
+  }
+});
+
+if(localStorage.getItem('user')){
+  document.getElementById('loginBox').style.display='none';
+  document.getElementById('chatContainer').style.display='block';
+}
+</script>
+</body>
+</html>
